@@ -1,8 +1,5 @@
 {
-  "cSpell.words": [
-    "dynotxt",
-    "mantine"
-  ],
+  "cSpell.words": ["dynotxt", "mantine"],
   "prettier.tabWidth": 2,
   "prettier.printWidth": 120,
   "prettier.trailingComma": "all",
