@@ -1,5 +1,6 @@
 import { AppShell, Burger, Flex, Group, Skeleton, Text } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import { Outlet } from "react-router-dom";
 
 export default function AppLayout() {
   const [opened, { toggle }] = useDisclosure();
@@ -29,7 +30,9 @@ export default function AppLayout() {
             <Skeleton key={index} h={28} mt="sm" animate={false} />
           ))}
       </AppShell.Navbar>
-      <AppShell.Main>Alt layout – Navbar and Aside are rendered on top on Header and Footer</AppShell.Main>
+      <AppShell.Main>
+        <Outlet />
+      </AppShell.Main>
       <AppShell.Footer p="md">Footer</AppShell.Footer>
     </AppShell>
   );

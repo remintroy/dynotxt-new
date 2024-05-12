@@ -1,4 +1,4 @@
-import { createTheme } from "@mantine/core";
+import { Button, createTheme } from "@mantine/core";
 
 export const theme = createTheme({
   colors: {
@@ -15,5 +15,14 @@ export const theme = createTheme({
       "#1A1B1E",
       "#141517",
     ],
+  },
+  autoContrast: true,
+  luminanceThreshold: 0.5,
+  components: {
+    Button: Button.extend({
+      defaultProps: {
+        variant: "light",
+      },
+    }),
   },
 });
